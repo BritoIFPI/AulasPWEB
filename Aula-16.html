@@ -4,90 +4,140 @@
 	<title>Box Model</title>
 	<meta charset="utf-8">
 	<style type="text/css">
-		body{
-			.conteudo1{
-			background: rgb(40%);
-			margin: 10px;
-		}
-#relativo{
-	position: relative;
-	margin: 0px;
-}
-#absoluto{
-	position: absolute;
-	margin: 0px;
-}
-
-		}
-		.caixa1{
-			background: blue;
-			margin: 10px;
-			width: 50%;
-			height: 30px;
-			color: #FFFFFF;
-			text-align: center;
-		}
-		.caixa2{
-			background: #ababab;
-			text-align: center;
-			margin: 10px;
-			width: 50%;
-			height: 100px;
-			color: #FFFFFF;
-		}
-		.caixa3{
-
-			background: hsla(10, 100%, 40%, 0.5);
-			margin: 10px;
-			width: 390px;
-			height: 390px;
-			color: #FFFFFF;
-			text-align: center;
+			
+		#box1{
+		width: 45%;
+		height: 300px;
 		}
 
-		.caixa4{
-			background: hsla(120, 10%, 2%, 0.5);
-			position: relative;
-			margin: 10px;
-			width: 240px;
-			height: 390px;
-			color: #FFFFFF;
+        #box2{
+        top: -300px;
+        position: relative;
+        left: 50%;
+		width: 45%;
+		height: 300px;
 		}
 
-		.caixa5{
-			background: hsla(120, 50%, 50%, 0.5);
-			margin: 10px;
-			width: 150px;
-			height: 150px;
-			color: #FFFFFF;
+		#mainmenu{
+		top: 0px;
+		text-align: center;
+		position: relative;
+		background: #FF4500;
+		width: 100%;
+		height: 30px;
+	    }
+	    #mainmenu2{
+		top: 0px;
+		text-align: center;
+		position: relative;
+		background: #FF4500;
+		width: 100%;
+		height: 30px;
+	    }
+
+		#hearder{
+
+		position: relative;
+		text-align: center;
+		background: #D8BFD8;
+		width: 100%;
+		height: 60px;
+		}
+
+		#hearder2{
+		position: relative;
+		text-align: center;
+		background: #D8BFD8;
+		width: 100%;
+		height: 60px;
+		}
+
+		#content{
+        position: relative;
+		text-align: center;
+		background: #32CD32;
+		width: 65%;
+		height: 400px;
+		}
+
+		#left{
+        position: relative;
+		text-align: center;
+		background: #B22222;
+		width: 25%;
+		height: 400px;
+		}
+		#sidebar{
+		position: relative;
+		left: 65%;
+		top: -400px;
+		text-align: center;
+		background: #006400;
+		width: 35%;
+		height: 400px;
+		}
+
+		#right{
+		position: relative;
+		top: -400px;
+		text-align: center;
+		background: #B22222;
+		height: 400px;
+		width: 25%;
+		left: 75%;
+		}
+
+#center{
+		position: relative;
+		top: -800px;
+		text-align: center; ;
+		background: #7CFC00;
+		height: 400px;
+		width: 50%;
+		left: 25%;
+		}
+
+		#footer{
+		top: -400px;
+		text-align: center;
+		position: relative;
+		background: #B8860B;
+		width: 100%;
+		height: 30px;
+		}
+
+		#footer2{
+		top: -800px;
+		text-align: center;
+		position: relative;
+		background: #B8860B;
+		width: 100%;
+		height: 30px;
 		}
 
 	</style>
 </head>
 <body>
-<div id="conteudo1">
 
-	<div class="caixa1">
-		MAIN MENU
-	</div>
+<div id="box1" >
 
-	<div id="relativo" class="caixa2">
-		HEARDER
-	</div>
-	
-<div id="absoluto" class="caixa3">
-		CONTENT
-	</div>
-
-	<div id="relativo" class="caixa4">
-		SIDE BAR
-	</div>
-
-<div id="relativo" class="caixa5">
-		FOOTER
-	</div>
-
+<div id="mainmenu" >MAIN MENU</div>
+<div id="hearder" >HEARDER</div>
+<div id="content" >CONTENT</div>
+<div id="sidebar" >SIDEBAR</div>
+<div id="footer" >FOOTER</div>
 
 </div>
+
+<div id="box2" >
+
+<div id="hearder2" >HEARDER</div>
+<div id="mainmenu2" >MENU</div>
+<div id="left" >LEFT</div>
+<div id="right" >RIGHT</div>
+<div id="center" >CENTER</div>
+<div id="footer2" >FOOTER</div>
+</div>
+
 </body>
 </html>
